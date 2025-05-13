@@ -105,12 +105,12 @@ final public class MuteSwitchDetectorCore {
         // Notifications
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(MuteSwitchDetectorCore.didEnterBackground(_:)),
-                                               name: NSNotification.Name.UIApplicationDidEnterBackground,
+                                               name: UIApplication.didEnterBackground,
                                                object: nil)
 
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(MuteSwitchDetectorCore.willEnterForeground(_:)),
-                                               name: NSNotification.Name.UIApplicationWillEnterForeground,
+                                               name: UIApplication.willEnterForeground,
                                                object: nil)
     }
 
